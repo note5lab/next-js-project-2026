@@ -1,12 +1,10 @@
-import Link from "next/link"
+import BottomNav from "@/components/BottomNav";
+
 export default function WithMenuLayout({ children }) {
-    return (
-        <>
-            {children}
-            <div className="fixed w-full bg-black bottom-0 text-white flex gap-4 justify-center p-8">
-                <Link href="/dashboard">Dashboard</Link>
-                <Link href="/task">Task</Link>
-            </div>
-        </>
-    )
+  return (
+    <>
+      <div className="pb-24">{children}</div>
+      <BottomNav />
+    </>
+  );
 }

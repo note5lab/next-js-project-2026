@@ -1,7 +1,7 @@
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbSeparator } from "@/components/ui/breadcrumb"
 export default function Task() {
     return (
-        <div>
+        <div className="p-4">
             <Breadcrumb>
                 <BreadcrumbList>
                     <BreadcrumbItem>
